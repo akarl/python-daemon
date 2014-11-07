@@ -6,6 +6,12 @@
 - write tests
 
 # Example
+    import datetime
+    import sys
+    import time
+
+    from python_daemon import Daemon
+
 
     class MyDaemon(Daemon):
         run_it = True
@@ -44,5 +50,6 @@
         else:
             print "usage: %s start|stop|restart" % sys.argv[0]
             sys.exit(2)
+            
 
 As found here http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/ with modifications.
